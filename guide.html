@@ -33,6 +33,11 @@
     .primary:hover{background:var(--ink)}
     .primary .new-window{font-size:.75rem;font-weight:500;opacity:.85}
     .link-note{font-size:.8125rem;color:var(--muted);margin-top:10px}
+    .quickstart{margin-top:24px;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--tint)}
+    .quickstart h2{font-size:1rem;letter-spacing:-.02em}
+    .quickstart p{margin-top:8px;color:var(--muted);font-size:.875rem}
+    .quickstart-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:10px;font-size:.875rem;font-weight:700}
+    .quickstart-links a{text-decoration:underline;text-underline-offset:3px}
     .essentials{background:var(--ink);color:var(--paper);padding:30px 32px;border-radius:var(--radius)}
     .essentials h2{font-size:1rem;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
     .essentials dl>div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid #466157}
@@ -51,7 +56,7 @@
     .id-rule{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fafbf7}
     .rule-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
     .rule-heading span{font-size:.8125rem;color:var(--muted)}
-    .digits{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:8px}
+    .digits{display:grid;grid-template-columns:1fr;gap:8px}
     .digit{display:flex;flex-direction:column;justify-content:center;min-height:90px;padding:12px 8px;background:var(--tint);border-radius:9px;text-align:center}
     .digit b{font-size:1.125rem;line-height:1.4;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
     .digit:first-child b{font-size:1.7rem}
@@ -102,6 +107,11 @@
           <p class="intro">수업반과 학번으로 게임에 참여하고, 완성한 결과는 <strong>내 수업반 전용 제출 폼</strong>으로 보내세요. 이름과 친구의 개인정보는 쓰지 않습니다.</p>
           <a class="primary" href="https://happygeo21.github.io/peacecraft-geography/" target="_blank" rel="noopener noreferrer nofollow">피스크래프트 게임 시작 <span class="new-window">새 창</span></a>
           <p class="link-note">학습을 마친 뒤, 아래 순서에 따라 직접 제출해요.</p>
+          <div class="quickstart" aria-labelledby="quickstart-title">
+            <h2 id="quickstart-title">화면으로 보는 단계별 안내 PDF</h2>
+            <p>교실에서 함께 설명을 볼 때, 또는 처음 참여하는 학생이 게임부터 제출까지 화면으로 따라갈 때 사용하세요.</p>
+            <div class="quickstart-links"><a href="quickstart.pdf" download>PDF 다운로드</a><a href="quickstart.pdf" target="_blank" rel="noopener noreferrer">PDF 새 창에서 보기</a></div>
+          </div>
         </div>
         <aside class="essentials" aria-labelledby="essentials-title">
           <h2 id="essentials-title">제출할 때 기억할 세 가지</h2>
@@ -122,13 +132,11 @@
             <p class="quiet">이름·팀 이름 입력란은 없습니다. 예전 데이터를 불러올 때도 기존 이름 항목은 가져오지 않습니다. 다만 글 내용 속 이름까지 자동으로 찾아 지우지는 않아요.</p>
           </div>
           <div class="id-rule">
-            <div class="rule-heading"><h3>학번은 숫자 5자리</h3><span>수업반 번호와 구분</span></div>
-            <div class="digits" aria-label="학년 2 한 자리, 원래 소속 반 두 자리, 출석번호 두 자리">
-              <div class="digit"><b>2</b><span>학년 · 1자리</span></div>
-              <div class="digit"><b>원래 반</b><span>2자리</span></div>
-              <div class="digit"><b>출석번호</b><span>2자리</span></div>
+            <div class="rule-heading"><h3>학번은 정확히 숫자 4자리</h3><span>수업반 번호와 구분</span></div>
+            <div class="digits" aria-label="숫자 4자리 학번 예시">
+              <div class="digit"><b>1101</b><span>학번 예시 · 숫자 4자리</span></div>
             </div>
-            <p>학년 2 + 원래 소속 반 두 자리 + 출석번호 두 자리를 이어 씁니다. 반과 출석번호가 한 자리이면 앞에 0을 붙여 두 자리로 맞추세요.</p>
+            <p>본인의 학번을 숫자 4자리로 입력하세요. 수업반 1~5는 별도로 선택하며, 학번과는 별개입니다.</p>
           </div>
         </div>
       </section>
@@ -136,7 +144,7 @@
       <section class="section" aria-labelledby="steps-title">
         <div class="section-heading"><span class="section-number">02</span><h2 id="steps-title">게임부터 제출 완료까지, 이 순서로</h2></div>
         <ol class="steps">
-          <li><div class="step-copy"><h3>게임에 참여하기</h3><p>위의 게임 시작 버튼을 눌러 <strong>배정된 수업반</strong>과 <strong>5자리 숫자 학번</strong>을 정확하게 입력하세요.</p></div></li>
+          <li><div class="step-copy"><h3>게임에 참여하기</h3><p>위의 게임 시작 버튼을 눌러 <strong>배정된 수업반</strong>과 <strong>4자리 숫자 학번</strong>을 정확하게 입력하세요.</p></div></li>
           <li><div class="step-copy"><h3>미션과 평화 실천 다짐 완성하기</h3><p>게임의 미션을 끝내고 나의 평화 실천 다짐을 작성하세요. 결과 화면에서 학습 내용과 수업반·학번이 맞는지 확인합니다.</p></div></li>
           <li><div class="step-copy"><h3>개인정보가 없는지 직접 살피기</h3><p>결과 내용과 다짐을 읽으며 아래 정보가 들어 있지 않은지 확인하고, 있다면 먼저 고치세요.</p>
             <ul class="privacy-list"><li>내 이름·친구 이름</li><li>연락처·전화번호</li><li>이메일 주소</li><li>학교 이름·학교 정보</li><li>나 또는 친구의 얼굴</li><li>계정·프로필 정보</li></ul>
@@ -144,7 +152,7 @@
           </div></li>
           <li><div class="step-copy"><h3>확인란을 체크하고 제출용 PNG 저장하기</h3><p>직접 점검을 마친 뒤 결과 화면의 <strong>개인정보 확인란</strong>을 체크하고, <span class="ui-label">제출용 이미지 저장</span> 버튼을 누르세요. 저장된 PNG도 한 번 더 확인합니다.</p><p><strong>화면 캡처보다 게임이 생성한 PNG를 사용하세요.</strong> 브라우저 화면이나 계정 프로필 UI가 함께 담기는 일을 줄일 수 있습니다.</p></div></li>
           <li><div class="step-copy"><h3>내 수업반의 제출 폼 열기</h3><p>아래의 수업반별 링크나 게임 결과 화면의 <strong>패들렛에 제출</strong> 버튼을 사용하세요. 각 폼은 해당 수업반에 고정되어 있으니 열기 전에 번호를 확인합니다.</p></div></li>
-          <li><div class="step-copy"><h3>제목은 학번만, 첨부는 PNG 한 장</h3><p>Padlet 제출 폼의 <strong>게시물 제목에는 5자리 학번만</strong> 쓰세요. 저장한 <strong>PNG 이미지 1장</strong>을 첨부하고 제출합니다. 이름·팀 이름이나 불필요한 개인정보는 추가하지 마세요.</p><p>이미지를 저장하는 것만으로는 자동 업로드되지 않습니다. <strong>폼에서 파일을 첨부하고 제출해야</strong> 전달됩니다.</p></div></li>
+          <li><div class="step-copy"><h3>제목은 학번만, 첨부는 PNG 한 장</h3><p>Padlet 제출 폼의 <strong>게시물 제목에는 4자리 학번만</strong> 쓰세요. 저장한 <strong>PNG 이미지 1장</strong>을 첨부하고 제출합니다. 이름·팀 이름이나 불필요한 개인정보는 추가하지 마세요.</p><p>이미지를 저장하는 것만으로는 자동 업로드되지 않습니다. <strong>폼에서 파일을 첨부하고 제출해야</strong> 전달됩니다.</p></div></li>
           <li><div class="step-copy"><h3>접수 안내까지 확인하기</h3><p>제출 후 폼에 표시되는 <strong>제출 완료·접수 안내</strong>를 확인하세요. 안내가 보이기 전에는 제출이 끝났다고 생각하지 마세요. 접수는 교사의 검토 완료나 게시물 공개를 뜻하지 않습니다.</p></div></li>
         </ol>
       </section>
@@ -165,16 +173,6 @@
         </div>
       </section>
 
-      <section class="section" aria-labelledby="privacy-title">
-        <div class="section-heading"><span class="section-number">04</span><h2 id="privacy-title">저장과 개인정보, 꼭 알아두기</h2></div>
-        <div class="notes">
-          <article><h3>학습 기록은 사용한 기기·브라우저에</h3><p>게임의 학습 데이터는 같은 기기와 같은 브라우저에 저장됩니다. 다른 기기나 브라우저로 자동 이동하지 않습니다. Padlet 제출도 자동이 아니라 직접 하는 별도의 과정입니다.</p></article>
-          <article><h3>Padlet은 외부 서비스예요</h3><p>수동으로 제출하면 학번과 결과 이미지가 외부 서비스인 Padlet으로 전달됩니다. 서비스 메타데이터와 로그인 관련 처리는 Padlet이 담당합니다. 로그인 없이 제출할 수 있다는 것이 개인정보 수집이 전혀 없다는 보장은 아닙니다.</p></article>
-          <article><h3>표시는 줄이고, 교사가 직접 검토해요</h3><p>작성자·작성 시각 표시는 꺼져 있으며 댓글·반응 기능도 사용하지 않습니다. 모든 제출물은 교사의 수동 검토 대상입니다. 이 설정이 이미지 속 개인정보를 대신 지워 주지는 않습니다.</p></article>
-          <article><h3>학번도 식별 정보예요</h3><p>이름을 쓰지 않아도 학번은 개인을 식별할 수 있는 정보입니다. 학번과 결과 이미지를 수업 밖에 공유하지 마세요. 제출에 필요한 수업반과 학번 외의 개인정보는 최소화합니다.</p></article>
-        </div>
-        <p class="closing"><strong>마지막 점검:</strong> 내 수업반이 맞나요? 제목은 학번만 썼나요? PNG는 1장인가요? 나와 친구의 개인정보를 직접 확인했나요? 제출 후 접수 안내까지 확인하면 마무리입니다.</p>
-      </section>
     </main>
     <footer><p>피스크래프트 · 수업 안내</p><p>이 안내 페이지에는 입력·저장·추적 기능이 없습니다.</p></footer>
   </div>
