@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="피스크래프트 수업 참여와 수업반별 비공개 Padlet 제출 안내. 이름 없이 수업반과 학번으로 참여하고 결과 PNG 한 장을 직접 제출합니다.">
+  <meta name="theme-color" content="#193b35">
+  <title>피스크래프트 | 수업 안내와 비공개 제출</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f6f0;--ink:#193b35;--green:#28654d;--muted:#53665c;--line:#d4ddd2;--tint:#e8eee4;--white:#fff;--radius:20px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","Apple SD Gothic Neo",sans-serif;font-size:16px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}
+    a{color:var(--green);text-decoration:none;-webkit-tap-highlight-color:transparent}
+    a:focus-visible{outline:3px solid var(--green);outline-offset:5px}
+    a:focus-visible.primary{outline-offset:6px}
+    h1,h2,h3,p,ol,ul,dl,dd{margin:0}
+    h1,h2,h3{line-height:1.35;letter-spacing:-.045em}
+    h1{font-size:clamp(2.35rem,5vw,3.65rem);font-weight:750;line-height:1.16}
+    h2{font-size:clamp(1.5rem,2.7vw,2rem);font-weight:700}
+    h3{font-size:1.125rem;font-weight:700}
+    strong{font-weight:700}
+    .wrap{max-width:1120px;padding-inline:32px;margin-inline:auto}
+    .masthead{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:25px;border-bottom:1px solid var(--line)}
+    .brand{font-size:1.2rem;font-weight:800;letter-spacing:-.04em}
+    .edition{color:var(--muted);font-size:.8125rem;letter-spacing:.01em}
+    .hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,1fr);gap:64px;align-items:center;padding-block:64px 72px}
+    .eyebrow{color:var(--green);font-size:.8125rem;font-weight:700;letter-spacing:.05em;margin-bottom:18px}
+    .intro{max-width:550px;margin-top:24px;color:var(--muted);font-size:1.0625rem;line-height:1.9}
+    .primary{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;min-height:60px;margin-top:30px;padding:14px 24px;border:1px solid var(--green);border-radius:12px;background:var(--green);color:var(--white);font-size:1.0625rem;font-weight:700;transition:background .15s}
+    .primary:hover{background:var(--ink)}
+    .primary .new-window{font-size:.75rem;font-weight:500;opacity:.85}
+    .link-note{font-size:.8125rem;color:var(--muted);margin-top:10px}
+    .essentials{background:var(--ink);color:var(--paper);padding:30px 32px;border-radius:var(--radius)}
+    .essentials h2{font-size:1rem;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
+    .essentials dl>div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid #466157}
+    .essentials dl>div:last-child{border-bottom:0;padding-bottom:6px}
+    .essentials dt{font-size:.875rem;color:#cfdbd0}
+    .essentials dd{font-size:1.125rem;line-height:1.5;font-weight:650}
+    .essentials small{display:block;margin-top:5px;color:#cfdbd0;font-size:.8125rem;font-weight:400}
+    .section{border-top:1px solid var(--line);padding-block:44px 52px}
+    .section-heading{display:flex;align-items:baseline;gap:18px;margin-bottom:28px}
+    .section-number{font-size:.8125rem;color:var(--green);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:.03em}
+    .section-lead{color:var(--muted);margin-top:-10px;margin-bottom:24px;max-width:790px}
+    .identity-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:36px}
+    .identity-intro p{margin-top:12px;color:var(--muted)}
+    .text-label{display:inline-block;background:var(--tint);padding:2px 10px;border-radius:5px;font-size:.875rem;color:var(--ink);font-weight:650}
+    .identity-intro .quiet{font-size:.875rem;margin-top:18px}
+    .id-rule{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fafbf7}
+    .rule-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+    .rule-heading span{font-size:.8125rem;color:var(--muted)}
+    .digits{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:8px}
+    .digit{display:flex;flex-direction:column;justify-content:center;min-height:90px;padding:12px 8px;background:var(--tint);border-radius:9px;text-align:center}
+    .digit b{font-size:1.125rem;line-height:1.4;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+    .digit:first-child b{font-size:1.7rem}
+    .digit span{font-size:.75rem;color:var(--muted);margin-top:6px}
+    .id-rule p{font-size:.8125rem;color:var(--muted);margin-top:14px;line-height:1.8}
+    .steps{list-style:none;padding:0;counter-reset:step}
+    .steps>li{counter-increment:step;display:grid;grid-template-columns:44px minmax(0,1fr);gap:20px;padding-block:24px;border-top:1px solid var(--line)}
+    .steps>li:first-child{padding-top:0;border-top:0}
+    .steps>li:last-child{padding-bottom:0}
+    .steps>li::before{content:counter(step,decimal-leading-zero);font-size:.875rem;font-weight:700;font-variant-numeric:tabular-nums;color:var(--green);line-height:2.05}
+    .step-copy>p{color:var(--muted);margin-top:8px;max-width:860px}
+    .privacy-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px;list-style:none;padding:14px 18px;margin-top:14px;background:var(--tint);border-radius:12px}
+    .privacy-list li{font-size:.9375rem;padding:5px 0;color:var(--ink)}
+    .privacy-list li::before{content:"제외";display:inline-block;margin-right:8px;color:var(--green);font-size:.6875rem;font-weight:750;letter-spacing:.02em;vertical-align:2px}
+    .step-copy .warning{font-size:.875rem;color:var(--ink);margin-top:12px}
+    .ui-label{font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:#b3c5b6;text-underline-offset:4px;text-decoration-thickness:2px}
+    .form-links{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:24px}
+    .form-link{display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-height:144px;padding:22px 18px;border:1px solid #b7cbbd;border-radius:14px;background:#fafbf7;transition:background .15s,border-color .15s}
+    .form-link:hover{background:var(--tint);border-color:var(--green)}
+    .form-link strong{font-size:1.25rem;letter-spacing:-.035em;line-height:1.4}
+    .form-link span{font-size:.8125rem;font-weight:600;line-height:1.6}
+    .form-notice{margin-top:24px;padding-left:18px;border-left:3px solid var(--green)}
+    .form-notice p{font-size:.9375rem;color:var(--muted)}
+    .form-notice p+p{margin-top:6px}
+    .notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+    .notes article{padding-top:18px;border-top:1px solid var(--line)}
+    .notes h3{font-size:1rem}
+    .notes p{margin-top:10px;color:var(--muted);font-size:.9375rem;line-height:1.9}
+    .closing{padding:22px 24px;margin-top:32px;border-radius:12px;background:var(--tint);font-size:.9375rem}
+    footer{border-top:1px solid var(--line);padding-block:24px 36px;color:var(--muted);font-size:.8125rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{gap:32px;grid-template-columns:minmax(0,1.25fr) minmax(260px,1fr)}.essentials{padding:24px}.identity-grid{gap:24px}.form-links{gap:8px}.form-link{padding:20px 12px}.form-link strong{font-size:1.125rem}.privacy-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:680px){.wrap{padding-inline:22px}.masthead{padding-block:20px;gap:12px}.brand{font-size:1.0625rem}.edition{font-size:.75rem}.hero{grid-template-columns:1fr;gap:30px;padding-block:40px}.intro{font-size:1rem;margin-top:20px}.eyebrow{margin-bottom:14px}.primary{display:flex;width:100%;margin-top:24px}.essentials{padding:23px 24px}.essentials dl>div{padding:14px 0;grid-template-columns:90px 1fr}.essentials dd{font-size:1.0625rem}.section{padding-block:32px 38px}.section-heading{gap:12px;margin-bottom:24px;align-items:flex-start}.section-number{padding-top:5px}.identity-grid,.notes{grid-template-columns:1fr;gap:24px}.id-rule{padding:20px}.steps>li{grid-template-columns:28px minmax(0,1fr);gap:12px;padding-block:22px}.privacy-list{grid-template-columns:1fr;padding:12px 15px}.form-links{grid-template-columns:1fr;gap:10px}.form-link{flex-direction:row;align-items:center;gap:14px;min-height:76px;padding:17px 20px}.form-link strong{font-size:1.1875rem}.form-link span{font-size:.8125rem}.closing{padding:20px}.rule-heading{align-items:baseline}.rule-heading span{font-size:.75rem}footer{display:block}footer p+p{margin-top:8px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a{transition:none}}
+    @media print{body{background:#fff}.wrap{max-width:none;padding-inline:0}.hero{padding-block:24px}.primary{color:var(--ink);background:none}.section{padding-block:24px}.form-links{grid-template-columns:repeat(5,1fr)}.essentials{background:none;color:var(--ink);border:1px solid var(--line)}.essentials dt,.essentials small{color:var(--muted)}.steps>li,.notes article,.form-link{break-inside:avoid}a{color:var(--ink)}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <p class="brand">피스크래프트</p>
+      <p class="edition">학생용 수업 안내 · 비공개 제출</p>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">지리로 이해하고, 평화로 연결하기</p>
+          <h1 id="page-title">수업 안내와<br>비공개 제출</h1>
+          <p class="intro">수업반과 학번으로 게임에 참여하고, 완성한 결과는 <strong>내 수업반 전용 제출 폼</strong>으로 보내세요. 이름과 친구의 개인정보는 쓰지 않습니다.</p>
+          <a class="primary" href="https://happygeo21.github.io/peacecraft-geography/" target="_blank" rel="noopener noreferrer nofollow">피스크래프트 게임 시작 <span class="new-window">새 창</span></a>
+          <p class="link-note">학습을 마친 뒤, 아래 순서에 따라 직접 제출해요.</p>
+        </div>
+        <aside class="essentials" aria-labelledby="essentials-title">
+          <h2 id="essentials-title">제출할 때 기억할 세 가지</h2>
+          <dl>
+            <div><dt>참여 정보</dt><dd>수업반 + 학번<small>이름·팀 이름은 입력하지 않아요.</small></dd></div>
+            <div><dt>게시물 제목</dt><dd>학번만<small>이름이나 설명은 덧붙이지 않아요.</small></dd></div>
+            <div><dt>첨부 파일</dt><dd>제출용 PNG 1장<small>화면 캡처보다 게임의 저장 버튼을 사용해요.</small></dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section" aria-labelledby="identity-title">
+        <div class="section-heading"><span class="section-number">01</span><h2 id="identity-title">수업반과 학번부터 확인해요</h2></div>
+        <div class="identity-grid">
+          <div class="identity-intro">
+            <h3><span class="text-label">수업반 1~5</span> 원래 반과 다를 수 있어요</h3>
+            <p><strong>수업반</strong>은 이번 수업에서 배정받은 1~5번의 분반입니다. 원래 소속된 반과 구분해 확인하세요. 게임에서 수업반을 선택하고, 숫자 학번을 입력해야 시작할 수 있습니다.</p>
+            <p class="quiet">이름·팀 이름 입력란은 없습니다. 예전 데이터를 불러올 때도 기존 이름 항목은 가져오지 않습니다. 다만 글 내용 속 이름까지 자동으로 찾아 지우지는 않아요.</p>
+          </div>
+          <div class="id-rule">
+            <div class="rule-heading"><h3>학번은 숫자 5자리</h3><span>수업반 번호와 구분</span></div>
+            <div class="digits" aria-label="학년 2 한 자리, 원래 소속 반 두 자리, 출석번호 두 자리">
+              <div class="digit"><b>2</b><span>학년 · 1자리</span></div>
+              <div class="digit"><b>원래 반</b><span>2자리</span></div>
+              <div class="digit"><b>출석번호</b><span>2자리</span></div>
+            </div>
+            <p>학년 2 + 원래 소속 반 두 자리 + 출석번호 두 자리를 이어 씁니다. 반과 출석번호가 한 자리이면 앞에 0을 붙여 두 자리로 맞추세요.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="steps-title">
+        <div class="section-heading"><span class="section-number">02</span><h2 id="steps-title">게임부터 제출 완료까지, 이 순서로</h2></div>
+        <ol class="steps">
+          <li><div class="step-copy"><h3>게임에 참여하기</h3><p>위의 게임 시작 버튼을 눌러 <strong>배정된 수업반</strong>과 <strong>5자리 숫자 학번</strong>을 정확하게 입력하세요.</p></div></li>
+          <li><div class="step-copy"><h3>미션과 평화 실천 다짐 완성하기</h3><p>게임의 미션을 끝내고 나의 평화 실천 다짐을 작성하세요. 결과 화면에서 학습 내용과 수업반·학번이 맞는지 확인합니다.</p></div></li>
+          <li><div class="step-copy"><h3>개인정보가 없는지 직접 살피기</h3><p>결과 내용과 다짐을 읽으며 아래 정보가 들어 있지 않은지 확인하고, 있다면 먼저 고치세요.</p>
+            <ul class="privacy-list"><li>내 이름·친구 이름</li><li>연락처·전화번호</li><li>이메일 주소</li><li>학교 이름·학교 정보</li><li>나 또는 친구의 얼굴</li><li>계정·프로필 정보</li></ul>
+            <p class="warning"><strong>자동 이름 인식이나 개인정보 자동 제거 기능은 없습니다.</strong> 사람이 직접 확인해야 합니다.</p>
+          </div></li>
+          <li><div class="step-copy"><h3>확인란을 체크하고 제출용 PNG 저장하기</h3><p>직접 점검을 마친 뒤 결과 화면의 <strong>개인정보 확인란</strong>을 체크하고, <span class="ui-label">제출용 이미지 저장</span> 버튼을 누르세요. 저장된 PNG도 한 번 더 확인합니다.</p><p><strong>화면 캡처보다 게임이 생성한 PNG를 사용하세요.</strong> 브라우저 화면이나 계정 프로필 UI가 함께 담기는 일을 줄일 수 있습니다.</p></div></li>
+          <li><div class="step-copy"><h3>내 수업반의 제출 폼 열기</h3><p>아래의 수업반별 링크나 게임 결과 화면의 <strong>패들렛에 제출</strong> 버튼을 사용하세요. 각 폼은 해당 수업반에 고정되어 있으니 열기 전에 번호를 확인합니다.</p></div></li>
+          <li><div class="step-copy"><h3>제목은 학번만, 첨부는 PNG 한 장</h3><p>Padlet 제출 폼의 <strong>게시물 제목에는 5자리 학번만</strong> 쓰세요. 저장한 <strong>PNG 이미지 1장</strong>을 첨부하고 제출합니다. 이름·팀 이름이나 불필요한 개인정보는 추가하지 마세요.</p><p>이미지를 저장하는 것만으로는 자동 업로드되지 않습니다. <strong>폼에서 파일을 첨부하고 제출해야</strong> 전달됩니다.</p></div></li>
+          <li><div class="step-copy"><h3>접수 안내까지 확인하기</h3><p>제출 후 폼에 표시되는 <strong>제출 완료·접수 안내</strong>를 확인하세요. 안내가 보이기 전에는 제출이 끝났다고 생각하지 마세요. 접수는 교사의 검토 완료나 게시물 공개를 뜻하지 않습니다.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="forms-title">
+        <div class="section-heading"><span class="section-number">03</span><h2 id="forms-title">내 수업반 전용 제출 폼</h2></div>
+        <p class="section-lead">원래 소속 반이 아니라 <strong>이번 수업의 수업반 번호</strong>를 고르세요. Padlet 공식 제출 폼이며, 각 링크는 해당 수업반에 고정되어 있습니다. 모두 새 창에서 열립니다.</p>
+        <nav class="form-links" aria-label="수업반별 Padlet 비공개 제출 폼">
+          <a class="form-link" href="https://padlet.com/aijne/submission-request/o4ZnXB6naP9RXNda?section=403883533" target="_blank" rel="noopener noreferrer nofollow"><strong>수업반 1</strong><span>전용 제출 폼 열기</span></a>
+          <a class="form-link" href="https://padlet.com/aijne/submission-request/o4ZnXB6naP9RXNda?section=403887570" target="_blank" rel="noopener noreferrer nofollow"><strong>수업반 2</strong><span>전용 제출 폼 열기</span></a>
+          <a class="form-link" href="https://padlet.com/aijne/submission-request/o4ZnXB6naP9RXNda?section=403887625" target="_blank" rel="noopener noreferrer nofollow"><strong>수업반 3</strong><span>전용 제출 폼 열기</span></a>
+          <a class="form-link" href="https://padlet.com/aijne/submission-request/o4ZnXB6naP9RXNda?section=403887630" target="_blank" rel="noopener noreferrer nofollow"><strong>수업반 4</strong><span>전용 제출 폼 열기</span></a>
+          <a class="form-link" href="https://padlet.com/aijne/submission-request/o4ZnXB6naP9RXNda?section=403887648" target="_blank" rel="noopener noreferrer nofollow"><strong>수업반 5</strong><span>전용 제출 폼 열기</span></a>
+        </nav>
+        <div class="form-notice">
+          <p><strong>게시판이 아니라 제출 폼을 사용하세요.</strong> 로그인은 필수가 아니며, 학생은 다른 학생의 제출물을 볼 수 없습니다.</p>
+          <p>게시판은 방문자와 학교 구성원 모두 접근 불가로 설정되어 있습니다. 제출 폼에서 접수 안내를 확인하면 됩니다.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="privacy-title">
+        <div class="section-heading"><span class="section-number">04</span><h2 id="privacy-title">저장과 개인정보, 꼭 알아두기</h2></div>
+        <div class="notes">
+          <article><h3>학습 기록은 사용한 기기·브라우저에</h3><p>게임의 학습 데이터는 같은 기기와 같은 브라우저에 저장됩니다. 다른 기기나 브라우저로 자동 이동하지 않습니다. Padlet 제출도 자동이 아니라 직접 하는 별도의 과정입니다.</p></article>
+          <article><h3>Padlet은 외부 서비스예요</h3><p>수동으로 제출하면 학번과 결과 이미지가 외부 서비스인 Padlet으로 전달됩니다. 서비스 메타데이터와 로그인 관련 처리는 Padlet이 담당합니다. 로그인 없이 제출할 수 있다는 것이 개인정보 수집이 전혀 없다는 보장은 아닙니다.</p></article>
+          <article><h3>표시는 줄이고, 교사가 직접 검토해요</h3><p>작성자·작성 시각 표시는 꺼져 있으며 댓글·반응 기능도 사용하지 않습니다. 모든 제출물은 교사의 수동 검토 대상입니다. 이 설정이 이미지 속 개인정보를 대신 지워 주지는 않습니다.</p></article>
+          <article><h3>학번도 식별 정보예요</h3><p>이름을 쓰지 않아도 학번은 개인을 식별할 수 있는 정보입니다. 학번과 결과 이미지를 수업 밖에 공유하지 마세요. 제출에 필요한 수업반과 학번 외의 개인정보는 최소화합니다.</p></article>
+        </div>
+        <p class="closing"><strong>마지막 점검:</strong> 내 수업반이 맞나요? 제목은 학번만 썼나요? PNG는 1장인가요? 나와 친구의 개인정보를 직접 확인했나요? 제출 후 접수 안내까지 확인하면 마무리입니다.</p>
+      </section>
+    </main>
+    <footer><p>피스크래프트 · 수업 안내</p><p>이 안내 페이지에는 입력·저장·추적 기능이 없습니다.</p></footer>
+  </div>
+</body>
+</html>
