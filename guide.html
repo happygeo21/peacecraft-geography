@@ -38,6 +38,13 @@
     .quickstart p{margin-top:8px;color:var(--muted);font-size:.875rem}
     .quickstart-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:10px;font-size:.875rem;font-weight:700}
     .quickstart-links a{text-decoration:underline;text-underline-offset:3px}
+    #demo-video-title{scroll-margin-top:24px}
+    .demo-video-desc{color:var(--muted);margin-top:-10px;margin-bottom:20px;max-width:900px;font-size:.9375rem}
+    .demo-video-player{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#101d18;border:1px solid var(--line);border-radius:14px}
+    .demo-video-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:12px;font-size:.9375rem;font-weight:700}
+    .demo-video-links a{display:inline-flex;align-items:center;min-height:44px;padding-block:6px;text-decoration:underline;text-underline-offset:3px}
+    .demo-video-note{color:var(--muted);font-size:.8125rem;margin-top:6px}
+    @media print{.demo-video-player{display:none}}
     .essentials{background:var(--ink);color:var(--paper);padding:30px 32px;border-radius:var(--radius)}
     .essentials h2{font-size:1rem;font-weight:600;letter-spacing:-.02em;margin-bottom:8px}
     .essentials dl>div{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:18px 0;border-bottom:1px solid #466157}
@@ -108,9 +115,9 @@
           <a class="primary" href="https://happygeo21.github.io/peacecraft-geography/" target="_blank" rel="noopener noreferrer nofollow">피스크래프트 게임 시작 <span class="new-window">새 창</span></a>
           <p class="link-note">학습을 마친 뒤, 아래 순서에 따라 직접 제출해요.</p>
           <div class="quickstart" aria-labelledby="quickstart-title">
-            <h2 id="quickstart-title">화면으로 보는 단계별 안내 PDF</h2>
-            <p>교실에서 함께 설명을 볼 때, 또는 처음 참여하는 학생이 게임부터 제출까지 화면으로 따라갈 때 사용하세요.</p>
-            <div class="quickstart-links"><a href="quickstart.pdf" download>PDF 다운로드</a><a href="quickstart.pdf" target="_blank" rel="noopener noreferrer">PDF 새 창에서 보기</a></div>
+            <h2 id="quickstart-title">영상·PDF로 보는 게임 안내</h2>
+            <p>45초 시연으로 전체 흐름을 먼저 보고, PDF로 차근차근 따라가세요.</p>
+            <div class="quickstart-links"><a href="#demo-video-title">45초 시연 영상 보기</a><a href="quickstart.pdf" download>PDF 다운로드</a><a href="quickstart.pdf" target="_blank" rel="noopener noreferrer">PDF 새 창에서 보기</a></div>
           </div>
         </div>
         <aside class="essentials" aria-labelledby="essentials-title">
@@ -121,6 +128,17 @@
             <div><dt>첨부 파일</dt><dd>제출용 PNG 1장<small>화면 캡처보다 게임의 저장 버튼을 사용해요.</small></dd></div>
           </dl>
         </aside>
+      </section>
+
+      <section class="section demo-section" aria-labelledby="demo-video-title">
+        <div class="section-heading"><span class="section-number">먼저 보기</span><h2 id="demo-video-title">45초로 보는 게임 진행과 제출</h2></div>
+        <p class="demo-video-desc" id="demo-video-desc">45초 · 무음 자막형 영상입니다. 재생 버튼을 눌러 시작하고, 작은 화면에서는 전체 화면으로 보세요. 수업1반·1101은 설명용 예시입니다.</p>
+        <video class="demo-video-player" id="demoVideo" controls playsinline preload="none" width="1920" height="1080" poster="walkthrough-poster.jpg" aria-label="피스크래프트 45초 시연 영상" aria-describedby="demo-video-desc">
+          <source src="walkthrough-45s.mp4" type="video/mp4">
+          영상을 재생할 수 없다면 <a href="walkthrough-45s.mp4" download="피스크래프트_45초_시연.mp4">시연 영상을 다운로드</a>해 주세요.
+        </video>
+        <div class="demo-video-links"><a href="walkthrough-45s.mp4" download="피스크래프트_45초_시연.mp4">시연 영상 다운로드 (MP4)</a><a href="walkthrough-45s.mp4" target="_blank" rel="noopener noreferrer">영상 새 창에서 보기</a></div>
+        <p class="demo-video-note">자동 재생되지 않습니다. 영상에 나온 실제 진행 순서는 아래 안내와 같습니다.</p>
       </section>
 
       <section class="section" aria-labelledby="identity-title">
